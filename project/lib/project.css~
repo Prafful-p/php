@@ -1,0 +1,71 @@
+.navbar{
+	padding : 20px 20px;
+	height : 150px;
+}
+.main{
+	color : fff;
+	background : #D1E0BD;
+	margin-left : -10px;
+	border-style: outset;
+	border-color: #A69C85;
+}
+.main label{
+	font-size : 20px;
+	padding-left : 50px;
+	color : #000;
+}
+.main h3{
+	color : #B2B2B2;
+	padding-bottom : 15px;
+	margin-top : -15px;
+}
+.main sup{
+	font-size : 12px;
+}
+select, textarea{
+	padding-left: 30px;
+	padding-right: 118px;
+}
+#subject{
+	margin-left : 50px;
+	margin-top : 10px;
+}
+#description{
+	margin-left : 50px;
+	margin-top : 10px;
+}
+#ticket{
+	margin-left : 50px;
+	margin-top : 10px;
+}
+#chngLog{
+	margin-left : 50px;
+	margin-top : 10px;
+}
+#head
+{
+	margin-top : 10px;
+}
+#type
+{
+	margin-left:50px;
+	padding-right : 267px;
+}
+#warning{
+	color : red;
+	margin-left : 40px;
+}
+.output{
+	margin-left : 30px;
+	background : #87E8C7;
+	border-style: outset;
+	border-color: #998F66;
+	}
+.output h3{
+	margin-top : -15px;
+	}
+.bdy{
+	background : #E6FAFF;
+}
+
+
