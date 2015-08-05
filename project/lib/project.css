@@ -26,6 +26,9 @@ select, textarea{
 	padding-left: 30px;
 	padding-right: 118px;
 }
+#out{
+	width : 400px;
+	}
 #subject{
 	margin-left : 50px;
 	margin-top : 10px;
@@ -35,6 +38,7 @@ select, textarea{
 #description{
 	margin-left : 50px;
 	margin-top : 10px;
+	width : 400px;
 }
 #ticket{
 	margin-left : 50px;
