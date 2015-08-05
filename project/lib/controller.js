@@ -19,8 +19,9 @@ angular.module('myApp.controllers', [])
 
 											};
 											$scope.log = function(){
-												$scope.chng = 'Change Log';
+												$scope.chng = '<Change Log>';
 											};
+											
 											
 							
 }]);

@@ -65,7 +65,7 @@
   {{di}}
   
   
-  {{ref}} {{ticref}}
+  {{ref}} {{ticref}}    {{chng}}
 			</textarea></br><br/>
 			<button select-all>Select All</button></br></br>
 		</div>
