@@ -18,6 +18,9 @@ angular.module('myApp.controllers', [])
 												$scope.ticref= ticre.replace(/,/g," #");
 
 											};
+											$scope.log = function(){
+												$scope.chng = 'Change Log';
+											};
 											
 							
 }]);

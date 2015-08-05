@@ -52,7 +52,7 @@
 				</div>
 				<div>
 					<label id="head" for="Include in changelog">Include in changelog</label>
-					<input id="chngLog" type="checkbox" "/></br>
+					<input id="chngLog" type="checkbox" ng-click="log()"/></br>
 				</div>
 				<br/><strong id="warning"><sup>*</sup> Mandatory field!!</strong><br/><br/>
 				</div>
@@ -65,7 +65,7 @@
   {{di}}
   
   
-  {{ref}} {{ticref}}
+  {{ref}} {{ticref}}    {{chng}}
 			</textarea></br><br/>
 			<button select-all>Select All</button></br></br>
 		</div>

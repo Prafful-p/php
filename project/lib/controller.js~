@@ -14,7 +14,7 @@ angular.module('myApp.controllers', [])
 											$scope.ticket = function(tick){
 												$scope.ref = 'ref :: ';
 												$scope.tic = tick;
-												var ticre = "tic";
+												var ticre = $scope.tic;
 												$scope.ticref= ticre.replace(/,/g," #");
 
 											};

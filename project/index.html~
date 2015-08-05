@@ -29,7 +29,7 @@
 			<h3 class="text-center">  <button type="button" class="btn btn-info btn-lg">INDEX</button></h3>
 			<label  for="type">Type<sup>*</sup></label><br/>
 				<div>
-					<select ng-model="typ" ng-change="type(typ)" id="type" required>
+					<select ng-model="typ" ng-change="type(typ)" id="type" >
 						<option value="Select Type"selected="selected" disabled="disabled" >Select Type</option>
 						<option value="Fix">Fix</option>
 						<option value="Remove">Remove</option>
@@ -52,7 +52,7 @@
 				</div>
 				<div>
 					<label id="head" for="Include in changelog">Include in changelog</label>
-					<input id="chngLog" type="checkbox" "/></br>
+					<input id="chngLog" type="checkbox" ng-click="log()"/></br>
 				</div>
 				<br/><strong id="warning"><sup>*</sup> Mandatory field!!</strong><br/><br/>
 				</div>
