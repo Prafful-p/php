@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<title>Tic Tac Toe</title>
+	<script src="js/angular.js"></script>
+	<script src="https://cdn.firebase.com/js/client/2.2.9/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
+	<script src="lib/ss.js"></script>
+	<link rel="stylesheet" href="lib/style.css" />
+	<link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+</head>
+
+<body x-ng-app="myApp" x-ng-controller="TicTacController">
+<script>
+var myDataRef = new Firebase('https://fiery-inferno-1000.firebaseio.com/');
+</script>
+<div class="container">
+	<div class="col-md-3">
+	</div>
+	<div class="col-md-6">
+		<div class="board ">
+			<h1>Tic Tac Toe</h1>
+			<p class="text-left"> Player-1 name : <input type="text" id="p1_name" ng-model="player1Name" ng-init="player1Name = 'Player 1'" ng-click="setName1(player1Name)" ng-keyup="removeFocus1($event)" /></p>
+			<p class="text-left"> Player-2 name : <input type="text" id="p2_name" ng-model="player2Name" ng-init="player2Name = 'Player 2'" ng-click="setName2(player2Name)" ng-keyup="removeFocus2($event)"/>
+			
+			<p class="text-center">{{player}} {{chance}}</p>
+			<div class="innerbox" x-ng-repeat="cell in cells track by $index" ng-click="drawMark($index)" >
+				{{cell}}
+			</div>
+			</br>
+		</div>
+	</div>
+	<div class="col-md-3 rslt">
+		<h3 class="text-left ">Result : {{Result}}</h3>
+		<h5 class="text-left">Game Record</h5>
+		<p class="text-left">Total : {{total}}</p>
+		<p class="text-left">{{player1Name}} : {{player1Score}}</p>
+		<p class="text-left">{{player2Name}} : {{player2Score}}</p>
+		<p class="text-left">Tie : {{tie}} </p>
+	</div>
+
+</body>
+
+</html>
+
+
