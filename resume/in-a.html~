@@ -1,0 +1,48 @@
+<html>
+<head>
+<script language=javascript>
+
+function deleteRows(){
+var isTable = document.getElementById('dataTbl');
+nBoxes = document.getElementsByName('delBox');
+for (i=nBoxes.length-1; i>=0; i--)
+{if (nBoxes[i].checked == true){isTable.deleteRow(i+1)}}
+}	
+
+</script>
+</head>
+<body>
+
+<table id='dataTbl' border='1' cellspacing='0' cellpadding='5'>
+<tr>
+<td> Item </td>
+<td> Desc </td>
+<td> Price </td>
+</tr>
+
+<tr>
+<td> Item 1 </td>
+<td> Desc 1 </td>
+<td> 10.00 </td>
+<td> <input type=checkbox name='delBox'>
+</tr>
+
+<tr>
+<td> Item 2 </td>
+<td> Desc 2 </td>
+<td> 20.00 </td>
+<td> <input type=checkbox name='delBox'>
+</tr>
+
+<tr>
+<td> Item 3 </td>
+<td> Desc 3 </td>
+<td> 30.00 </td>
+<td> <input type=checkbox name='delBox'>
+</tr>
+</table>
+<br>
+<input type=button value="Delete Rows" onclick="deleteRows()">
+
+</body>
+</html>

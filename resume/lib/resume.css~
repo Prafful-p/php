@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#table {
+    padding: 10px;
+}
+body{
+	padding-left : 30px;
+	}
+#img{
+margin-left : 20px;
+}
+#head{
+	margin-left:350px;
+	margin-top:10px;
+	color:000;
+	}
+.sty{
+	padding-top: 50px;
+	}
+

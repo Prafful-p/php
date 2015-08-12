@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>resume</title>
+<script src="lib/angular.min.js"></script>
+<script src="lib/resume_script.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="lib/resume.css">
+<link rel="stylesheet" href="lib/bootstrap-3.3.4-dist/css/bootstrap.min.css">
+
+
+</head>
+<body id="main" ng-app="resume">
+<div  ng-controller="myCntrl">
+<div class="container">
+	<p id="img"><img src="image/IMG_about.png"></p>
+	<h3 id="head">Fill up your Resume/CV</h3>
+	<div class="col-md-4 sty">
+		<form>
+			NAME : <br/> <input type="text" ng-model="emp.name" placeholder="name" required /><br><br>
+			D/O/B : <input type="date" ng-model="emp.date" placeholder="date"/><br><br>
+			GENDER : <input type="radio" ng-model="emp.sex" value="male" />male
+    				<input type="radio" ng-model="emp.sex" value="female" />female
+				<input type="radio" ng-model="emp.sex" value="other" />other<br />
+			CONTACT : <input type="text" ng-model="emp.contact" placeholder="contact"/><br><br>
+			ADDRESS : <input type="text" ng-model="emp.address" placeholder="Address"  /><br><br>
+
+			
+			<input type="submit" value="Submit" ng-click="submit(emp)"  />
+			
+		</form>
+		<br>
+	</div>
+	<div class="col-md-8 sty">
+		<table id="adtbl">
+		
+			<tr id="table">
+				<th id="table"></th>
+				
+				<th id="table"> name </th>
+				<th id="table"> dob </th>
+				<th id="table"> gender </th>
+				<th id="table"> contact </th>
+				<th id="table"> address </th>
+				<th id="table"> s.no </th>
+				<th></th>
+			</tr>
+			<tr id="table" ng-repeat="emp in employes" >
+				
+				<td id="table">{{$index+1}}</td>
+				<td id="table"> {{emp.name}} </td>
+				<td id="table"> {{emp.date | date : dd/MM/yyyy}}</td>
+				<td id="table"> {{emp.sex}} </td>
+				<td id="table"> {{emp.contact}} </td>
+				<td id="table"> {{emp.address}} </td>
+				<td id="table"><input type="checkbox" id="check" ng-click="removeItem($index)"/></td>
+			</tr>
+		</table>
+		
+				<input type=button  value="Delete Rows" ng-click="deleteRows(ind)">
+	</div>
+</div>
+</div>
+</body>
+</html>
