@@ -1,0 +1,27 @@
+.body{
+    text-align: center;
+    background: teal;
+}
+.main{
+    background: lightslategray;
+}
+#res{
+    background: darkgray;
+    text-align: left;
+    height: 400px;
+    width : 300px;
+    margin-left: 500px;
+    padding-left: 30px;
+    overflow: auto;
+}
+#result{
+    list-style-type: none;
+}
+#delete{
+    margin : 15px 0px 10px 35px ;
+    background: tan;
+}
+#clear{
+    background: silver;
+    margin : 15px 0px 10px 35px ;
+}

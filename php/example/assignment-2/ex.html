@@ -1,0 +1,27 @@
+if(isset($_POST['submit']))
+{
+if(!is_dir("uploads/"))
+{
+mkdir("uploads/");
+}
+$dir = "uploads/";
+$target = $dir.basename($_FILES['img']['name']);
+$fn = $_FILES['img']['name'];
+if($fn != "jpg" && $fn != "png" && $fn != "jpeg"
+&& $fn != "gif" )
+{
+if(move_uploaded_file($_FILES['img']['tmp_name'],$target))
+{
+$error="Thanks Your File $fn has been Uploaded <br><br>";
+}else{
+$error=  "Sorry Try Again";
+}
+}else{
+echo "SIZE | TYPE MISTMATCH :( Try Again";
+}
+}
+
+if(isset($error)){
+setcookie("error",$error,time()+60*5);
+header("location: index.php");
+}

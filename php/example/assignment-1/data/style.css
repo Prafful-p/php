@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background: palegoldenrod;
+    margin: 0px;
+}
+h1{
+    padding-top: 30px;
+}
+#main{
+    background: darkcyan;
+    margin-top: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#footer{
+    background: dodgerblue;
+    padding: 10px;
+    height: 30px;
+}
+#result{
+    background: antiquewhite;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 250px;
+    overflow: auto;
+}
+form{
+    margin-top: 10px;
+}
